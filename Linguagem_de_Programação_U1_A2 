@@ -1,0 +1,562 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNGY/KuxxCdrBLx0V04Mbg+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Fernanda-dev013/Aulas-de-Python-Facul/blob/main/Linguagem_de_Programa%C3%A7%C3%A3o_U1_A2%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#U1_A1"
+      ],
+      "metadata": {
+        "id": "c5crihRnPG9F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#01Nosso primeiro programa\n",
+        "print(\"Hello World\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VPSZ8KRoPuD1",
+        "outputId": "e7f98334-6e4e-462c-a7ef-dfe36a4dab14"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#02 Criando variáveis de tipos diferentes"
+      ],
+      "metadata": {
+        "id": "1H82E7aVQQQ4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10\n",
+        "nome = 'Fernanda'\n",
+        "nota = 8.75\n",
+        "fez_inscricao = 'true'"
+      ],
+      "metadata": {
+        "id": "Kcaxv8YQQ-dz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(x)\n",
+        "print(nome)\n",
+        "print(nota)\n",
+        "print(fez_inscricao)\n",
+        "# The 'nome = input(\"Digite seu nome: \")' line correctly prompts the user for their name.\n",
+        "# After running the cell with the input, the 'nome' variable would hold the user's entry.\n",
+        "print(f\"Current value of 'nome' after potential input: {nome}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qjaRJIgZR87z",
+        "outputId": "80d51c4f-4c07-4bdd-9648-08c906f93a6b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "Fernanda\n",
+            "8.75\n",
+            "true\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(x))\n",
+        "print(type(nome))\n",
+        "print(type(nota))\n",
+        "print(type(fez_inscricao))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vLRsOxWeS4cC",
+        "outputId": "d46239f6-4373-41b8-f1a6-8016d77f4d64"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'str'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"olá {nome}, bem vinda a diciplina de progeamação\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dhTDYOKDUveT",
+        "outputId": "ee2d7c27-8ed0-442c-ecca-40675a6ff511"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "olá Fernanda, bem vinda a diciplina de progeamação\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = input(\"Digite seu nome: \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gTnct5GBWb-g",
+        "outputId": "98b49681-b130-44f9-d20c-9fab4ac50f78"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite seu nome: Fernanda\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota_1 = int(input(\"Digite a nota: \"))\n",
+        "nota_2 = int(input(\"Digite a nota: \"))\n",
+        "nota_3 = int(input(\"Digite a nota: \"))\n",
+        "nota_4 = int(input(\"Digite a nota: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yARJZShEaZ-Y",
+        "outputId": "7a81a48a-942f-4d8a-f479-b44f35e983ee"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite a nota: 10\n",
+            "Digite a nota: 8\n",
+            "Digite a nota: 5\n",
+            "Digite a nota: 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "media = (nota_1 + nota_2 + nota_3 + nota_4) / 4"
+      ],
+      "metadata": {
+        "id": "ziilIRRKa3Uc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(media)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OAAFqpCybZl6",
+        "outputId": "9f9a78ee-5049-43cc-a794-ba07b41fe948"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if media>6:\n",
+        "  situacao = \"Aprovado\"\n",
+        "else:\n",
+        "    situacao = \"Reprovado\""
+      ],
+      "metadata": {
+        "id": "YpxQ68V1ehs7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(situacao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KU_lfgoud8RR",
+        "outputId": "27275daa-7490-47b0-81f0-759a92894f21"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "EEvHPQ1UYaBI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##U1_A2\n"
+      ],
+      "metadata": {
+        "id": "judIW3PEYq6w"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#menor que\n",
+        "print(5<10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2fy2xcCXYtOJ",
+        "outputId": "14729cad-b19c-4e0f-caa5-685e685d4efc"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#maior que\n",
+        "print(5>10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7v_fva_uZL2R",
+        "outputId": "6affd401-eda9-450a-cb59-2934b655b7a3"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#igual a\n",
+        "print(7==7)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dUeTsEZeZPYD",
+        "outputId": "82cd34be-7d6e-4893-c5ba-edd2b787f47f"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#diferente de\n",
+        "print(7!=8)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IWSLuMdIZc4e",
+        "outputId": "d3dba1a5-3c9a-446b-ba78-30b64f7062d6"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Guardando informações\n",
+        "idade = 18\n",
+        "e_maior_de_idade = idade >=18\n",
+        "print(e_maior_de_idade)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NQ0eIsVWb4hE",
+        "outputId": "9de746dc-3ab1-4f82-feb4-7c2c057c0b07"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(True and True)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KRHzEp7YdiQu",
+        "outputId": "46d7ffd2-3be2-4eed-f036-6046a82265bb"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(True or false)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7X6ShooEeBao",
+        "outputId": "cc0e20aa-129c-454f-9055-11c45852d44c"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = int(input(\"Digite sua idade:\"))\n",
+        "if idade < 18:\n",
+        "  print(\"Menor de idade\")\n",
+        "elif idade >=18 and idade <65:\n",
+        "  print(\"Adulto\")\n",
+        "else:\n",
+        "  print(\"Idoso\")"
+      ],
+      "metadata": {
+        "id": "GgtMrd4UeU7m",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a499a9c0-17b6-4474-a469-429a0bedebbc"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade:18\n",
+            "Adulto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "#definindo a quantidade de ingressos\n",
+        "quantidade_ingressos = 10\n",
+        "#solicitando a idade\n",
+        "idade = int(input(\"Digite sua idade:\"))\n",
+        "#Recomendando o filme com base na idade\n",
+        "if idade <12:\n",
+        "  print(\"Recomendamos o filme infanil Filme 1\")\n",
+        "elif idade >=12 and idade <18:\n",
+        "  print(\"Recomendamos o filme adolecente Filme 2\")\n",
+        "else:\n",
+        "    print(\"Recomendamos o emocionante Filme 3\")\n",
+        "\n",
+        "#Verificando a disponibilidade dos ingressos\n",
+        "if quantidade_ingressos > 0:\n",
+        "  print(\"Ingressos estão disponíveis. Divirta-se no cinema!\")\n",
+        "else:\n",
+        "    print(\"Desculpe, não temos ingressos disponíveis\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iNfgsMfKkDrE",
+        "outputId": "4b3d0b61-c69a-4f7a-bddb-2f29cedb37e4"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade:12\n",
+            "Recomendamos o filme adolecente Filme 2\n",
+            "Ingressos estão disponíveis. Divirta-se no cinema!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "3ZdiE75fqU2t"
+      },
+      "execution_count": 51,
+      "outputs": []
+    }
+  ]
+}
